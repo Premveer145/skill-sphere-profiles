@@ -85,7 +85,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
               <SelectValue placeholder="Select skill" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="">Any skill</SelectItem>
+              <SelectItem value="all">Any skill</SelectItem>
               {skills.map((skill) => (
                 <SelectItem key={skill.id} value={skill.id}>
                   {skill.name}
